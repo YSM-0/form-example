@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="page-container">
+        <div class="form-container">
+            <form novalidate>
+                <div class="form-div">
+                    <div class="input-div">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name">
+                    </div>
+                    <div class="input-div">
+                        <label for="last-name">Last-Name</label>
+                        <input type="text" id="last-name">
+                    </div>
+                    <span class="name-error"></span>
+                </div>
+                <div class="form-div">
+                    <div class="input-div">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <span class="mail-error"></span>
+                </div>
+                <div class="form-div">
+                    <div class="input-div">
+                        <label for="country">Country</label>
+                        <input type="text" id="country">
+                    </div>
+                    <div class="input-div">
+                        <label for="zip">ZIP Code</label>
+                        <input type="text" id="zip">
+                    </div>
+                    <span class="adress-error"></span>
+                </div>
+                <div class="form-div">
+                    <div class="input-div">
+                        <label for="password">Password</label>
+                        <input type="password" id="password">
+                    </div>
+                    <div class="input-div">
+                        <label for="password-confirm">Confirm Password</label>
+                        <input type="password" id="password-confirm">
+                    </div>
+                    <span class="password-error"></span>
+                </div>
+                <button type="button" class="sub-button">Let's Go</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
