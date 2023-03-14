@@ -56,12 +56,12 @@
 
 .sub-button {
     all: unset;
-    text-shadow: 0 0 1px var(--primary);
+    text-shadow: 0 0 1px var(--secondary);
     margin: 0 20px;
 }
 
 .sub-button:hover {
-    text-shadow: 0 0 1px var(--secondary);
+    text-shadow: 0 0 1px var(--primary);
     cursor: pointer;
 }
 
@@ -71,4 +71,8 @@ label {
 
 .input-div:focus-within label {
     text-shadow: 0 0 1px var(--primary);
+}
+
+input:invalid {
+    border: 1px solid red;
 }
