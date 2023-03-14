@@ -16,11 +16,11 @@
                 <div class="form-div">
                     <div class="input-div">
                         <label for="first-name">First Name</label>
-                        <input type="text" id="first-name" required>
+                        <input type="text" id="first-name" pattern="^[a-zA-Z]*$" required>
                     </div>
                     <div class="input-div">
                         <label for="last-name">Last-Name</label>
-                        <input type="text" id="last-name" required>
+                        <input type="text" id="last-name" pattern="^[a-zA-Z]*$" required>
                     </div>
                     <span class="name-error" aria-live="polite"></span>
                 </div>
@@ -34,18 +34,18 @@
                 <div class="form-div">
                     <div class="input-div">
                         <label for="country">Country</label>
-                        <input type="text" id="country" required>
+                        <input type="text" id="country" pattern="^[a-zA-Z]*$" required>
                     </div>
                     <div class="input-div">
                         <label for="zip">ZIP Code</label>
-                        <input type="text" id="zip" required>
+                        <input type="text" id="zip" pattern="^[0-9]+$" required>
                     </div>
                     <span class="adress-error" aria-live="polite"></span>
                 </div>
                 <div class="form-div">
                     <div class="input-div">
                         <label for="password">Password</label>
-                        <input type="password" id="password" required>
+                        <input type="password" id="password" pattern="^(?=.*[A-Z])(?=.*[\W_])(.{10,})$" required>
                     </div>
                     <div class="input-div">
                         <label for="password-confirm">Confirm Password</label>

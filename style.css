@@ -76,3 +76,11 @@ label {
 input:invalid {
     border: 1px solid red;
 }
+
+input:focus:invalid {
+    outline: none;
+}
+
+input:valid {
+    border: 1px solid green;
+}
